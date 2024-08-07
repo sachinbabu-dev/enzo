@@ -1,3 +1,16 @@
+/**
+ * Renders a search filters component that allows users to enter filter criteria as a string and
+ * parses it back into a filter object. The component keeps track of the filter string and updates
+ * it whenever the filter object changes.
+ *
+ * @param {SearchFiltersProps} props - The props object containing the initial filter object and a
+ * callback function to handle changes to the filter object.
+ * @param {Record<string, any[]>} props.filters - The initial filter object.
+ * @param {(newFilters: Record<string, any[]>) => void} props.onChange - The callback function to
+ * handle changes to the filter object.
+ * @return {ReactElement} The rendered search filters component.
+ */
+
 import React, { useState, useEffect } from "react";
 import { Input } from "antd";
 

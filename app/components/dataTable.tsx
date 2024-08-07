@@ -1,4 +1,10 @@
-// components/CoursesTable.tsx
+/**
+ * A functional component that renders a table of courses.
+ *
+ * @param {CoursesTableProps} courses - An array of course objects.
+ * @return {JSX.Element} A table element displaying the courses.
+ */
+
 import { Table, Tag } from "antd";
 import { ColumnsType } from "antd/es/table";
 import { Course } from "../models/cource";
