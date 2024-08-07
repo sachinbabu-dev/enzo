@@ -1,12 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import CoursesTable from "./components/dataTable";
-import styles from "./page.module.css";
 import { Breadcrumb, Layout } from "antd";
 import { Course } from "./models/cource";
 import { data } from "./data/mockData";
-import Search from "./components/search";
 import Filters from "./components/filter";
+import SearchFilters from "./components/search";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -16,6 +15,7 @@ export default function Home() {
   const [filters, setFilters] = useState<Record<string, any[]>>({});
 
   useEffect(() => {
+    setCourses(data);
     setFilteredCourses(data);
   }, []);
 
@@ -45,7 +45,7 @@ export default function Home() {
             );
           } else {
             // Handle filtering for scalar types
-            result = result.filter((course) =>
+            result = result.filter((course: any) =>
               filters[key].includes(course[key])
             );
           }
@@ -86,7 +86,7 @@ export default function Home() {
           </Sider>
           <Content style={{ padding: "0 24px", minHeight: "74vh" }}>
             <div style={{ marginBottom: "20px" }}>
-              <Search />
+              <SearchFilters filters={filters} onChange={setFilters} />
             </div>
             <CoursesTable courses={filteredCourses} />
           </Content>
