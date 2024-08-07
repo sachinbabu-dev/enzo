@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Enzo - Next.js Project with Ant Design
+
+Welcome to the Enzo project, built using Next.js and integrated with Ant Design for a robust and modern UI experience. This project is designed to showcase the capabilities of combining Next.js with Ant Design.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js: Install from [Node.js official website](https://nodejs.org/). It's recommended to use the version corresponding to the latest Long-Term Support (LTS) release.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get your development environment set up:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Clone the Repository
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone this repository to your local machine using the following command:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+git clone https://github.com/sachinbabu-dev/enzo.git
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+cd enzo
 
-## Learn More
+### 2. Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+Navigate to the project directory and install the necessary packages:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm install
+    npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This will start the server on http://localhost:3000. Open this URL in your browser to view the application.
 
-## Deploy on Vercel
+### Using Ant Design with Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project utilizes Ant Design for its component library. For comprehensive instructions on integrating Ant Design with Next.js, refer to the official documentation:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ant Design - [Use with Next.js](https://ant.design/docs/react/use-with-next)
+
+This guide will help you set up Ant Design components correctly within a Next.js framework, ensuring optimal SSR performance and usability.
+
+### Contributing
+
+Contributions to the Enzo project are welcome! Feel free to fork the repository, make changes, and submit pull requests. You can also open issues to discuss potential improvements or report bugs.
+
+### License
+
+This project is licensed under the MIT License. For more details, see the LICENSE file in the repository.
